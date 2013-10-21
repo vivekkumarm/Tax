@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/Tabcontrol.css" rel="stylesheet" />
+</head>
+<body style="background: white;">
+    <div data-bind="tabs: { foreach: tabs, 'tab-template': 'tab-template', 'content-template': 'content-template' }">
+    </div>
+    <script type="text/html" id="tab-template">
+        <div class="tab" data-bind="css: { selected: $parent.selectedTab() == $data }, text: name, click: $parent.selectedTab.bind($parent, $data)"></div>
+    </script>
+    <script type="text/html" id="content-template">
+        <div data-bind="if: $parent.selectedTab() == $data">
+            <div data-bind="text: text"></div>
+
+            <div data-bind="if: tabs().length > 0">
+                <div data-bind="tabs: { foreach: tabs, 'tab-template': 'tab-template', 'content-template': 'content-template' }"></div>
+            </div>
+        </div>
+    </script>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/TabControl/TabcontrolJs.js"></script>
+</body>
+</html>
+

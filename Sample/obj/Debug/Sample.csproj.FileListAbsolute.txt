@@ -1,0 +1,9 @@
+F:\Sujanth Backup\Sample\Sample\bin\Sample.dll
+F:\Sujanth Backup\Sample\Sample\bin\Sample.pdb
+F:\Sujanth Backup\Sample\Sample\obj\Debug\Sample.csprojResolveAssemblyReference.cache
+F:\Sujanth Backup\Sample\Sample\obj\Debug\Sample.dll
+F:\Sujanth Backup\Sample\Sample\obj\Debug\Sample.pdb
+D:\Tax\Sample\Sample\bin\Sample.dll
+D:\Tax\Sample\Sample\bin\Sample.pdb
+D:\Tax\Sample\Sample\obj\Debug\Sample.dll
+D:\Tax\Sample\Sample\obj\Debug\Sample.pdb

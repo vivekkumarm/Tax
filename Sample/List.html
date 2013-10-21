@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style type="text/css">
+        body { font-family: arial; font-size: 14px; }
+        .liveExample { padding: 1em; background-color: none; border: 1px solid #CCC; max-width: 655px; }
+        .liveExample input { font-family: Arial; }
+        .liveExample b { font-weight: bold; }
+        .liveExample p { margin-top: 0.9em; margin-bottom: 0.9em; }
+        .liveExample select[multiple] { width: 100%; height: 8em; }
+        .liveExample h2 { margin-top: 0.4em; }
+    </style>
+</head>
+<body>
+    <div class='liveExample'>
+
+        <form data-bind="submit: addItem">
+            New item:
+    <input data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
+            <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+            <p>List1:</p>
+            <div>
+            <select multiple="multiple" width="50" data-bind="options: items"></select>
+            </div>
+            <p>List2:</p>
+            <div>
+            <select multiple="multiple" width="50" data-bind="options: items"></select>
+            </div>
+        </form>
+
+    </div>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/List/List.js"></script>
+</body>
+</html>
