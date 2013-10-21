@@ -121,6 +121,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="ControlEvents.html" />
     <Content Include="css\Tabcontrol.css" />
     <Content Include="GidBinding.html" />
     <Content Include="GridControl.html" />
@@ -132,6 +133,7 @@
     <Content Include="Popupdialog.html" />
     <Content Include="Scripts\Accordion\Accordion.js" />
     <Content Include="Scripts\Accordion\SimpleAccordian.js" />
+    <Content Include="Scripts\ControlEvents\ControlEvents.js" />
     <Content Include="Scripts\Grid\GridBinding.js" />
     <Content Include="Scripts\Grid\GridControlJS.js" />
     <Content Include="Scripts\Grid\GridJsnop.js" />
