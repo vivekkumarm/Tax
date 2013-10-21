@@ -128,6 +128,7 @@
     <Content Include="GridPaging.html" />
     <Content Include="GridSorting.html" />
     <Content Include="knockout_accordion.html" />
+    <Content Include="List.html" />
     <Content Include="packages.config" />
     <Content Include="Popupdialog.html" />
     <Content Include="Scripts\Accordion\Accordion.js" />
@@ -157,6 +158,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
+    <Content Include="Scripts\List\List.js" />
     <Content Include="Scripts\Popup\Popup.js" />
     <Content Include="Scripts\Popup\Popupdialog.js" />
     <Content Include="Scripts\TabControl\TabcontrolJs.js" />
