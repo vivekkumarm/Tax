@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="lib/jquery-1.9.1.js"></script>
+    <script src="lib/jquery.unobtrusive-ajax.js"></script>
+    <script src="lib/jquery.validate.js"></script>
+    <script src="lib/knockout-2.3.0.js"></script>
+    <script src="lib/Script/GridJsnop.js"></script>
+    <script src="lib/knockout.mapping-latest.js"></script>
+</head>
+
+<body>
+
+    <table border="1">
+
+        <thead>
+
+            <tr>
+
+                <th>Name
+
+                </th>
+
+                <th>Director
+
+                </th>
+
+                <th>Genere
+
+                </th>
+
+            </tr>
+
+        </thead>
+
+        <tbody data-bind="foreach: movies">
+
+            <tr>
+
+                <td data-bind="text: Title"></td>
+
+                <td data-bind="text: Director"></td>
+
+                <td data-bind="text: Genere"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <!--    <button data-bind='click: addItem'>
+        Add item
+    </button>-->
+
+
+
+
+</body>
+<script type="text/javascript">
+
+    //var viewModel = {
+    //    movies: ko.observableArray(),
+    //};
+    //$(document).ready(function () {
+    //    var url = "http://localhost:21368/api/GridLoad";
+
+    //    debugger;
+
+
+        //$.ajax({
+        //    url: "http://localhost:21368/api/GridLoad",
+        //    contentType: "text/json",
+        //    type: "GET",
+        //    success: function(data) {
+        //         $.each(data, function(index) {
+        //                viewModel.movies.push(ToKnockOutObservable(data[index]));
+        //         });
+        //        ko.applyBindings(viewModel);
+        //    },
+        //    error: function(data) {
+        //        alert(data);   alert("error occured");
+        //        ;
+        //    }
+        //});     
+    //    function ToKnockOutObservable(movies) {
+    //        return {
+    //            Id: ko.observable(movies.Id),
+    //            Title: ko.observable(movies.Title),
+    //            Director: ko.observable(movies.Director),
+    //            Genere: ko.observable(movies.Genere),
+    //        };
+    //    }
+    //});
+</script>
+
+</html>

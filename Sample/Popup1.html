@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Popup open Dialog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+</head> 
+<body>
+   
+<div data-role="page" id="page1" data-theme="a">
+
+  <div data-role="header">
+    <h1>Popup open Dialog</h1>
+  </div>
+
+  <div data-role="content">
+      <p class="ui-bar ui-bar-a ui-corner-all fs14">Please open the first popup by clicking the button. All popup events are logged. After the 1st popup is shown, please use the button to open the dialog. There is another popup-link for opening the 2nd popup which will not work. Please just click that popup-link once, otherwise navigation will break and the dialog is not closeable anymore; a look into the console shows:<span style="display:block; padding: .6em; color:orange;">TypeError: 'null' is not an object (evaluating 'c._currentlyOpenPopup.element').</span>After that first click, close the dialog. You'll see there is just a <code>popupafterclose</code> event logged for #pop2. Then try to open the first popup again. It will may flash in and out and all events are raised. A second click will work again.
+      <a href="#pop1" data-rel="popup" data-position-to="window">Let me see this Popup!</a>
+    </p>
+    <ol id="log" data-role="listview" data-theme="b" data-inset="true" ></ol>
+
+    <div data-role="popup" id="pop1" data-theme="none">
+      <img id="pic2" src="http://test.jqmobile.de/img/popups-work.jpg" />
+      <div class="ui-bar ui-bar-c">
+        <a href="#dia" data-rel="dialog" data-theme="b">open the dialog</a>
+      </div>
+    </div>
+  </div>
+
+<script>
+    $('#page1').bind('pageinit', function () {
+        picache = "http://jquerymobile.com/test/docs/_assets/images/jquery-logo.png";
+
+        $('#pop1,#pop2').bind('popupbeforeposition popupafteropen popupafterclose', function (e) {
+            var thm = e.type == 'popupbeforeposition' ? 'b' : (e.type == 'popupafteropen' ? 'd' : 'e'),
+                tgt = $(e.target).attr('id');
+            style = tgt == 'pop2' ? 'style="color: firebrick; font-size:1.2em;"' : "";
+
+            $('#log').append('<li data-theme="'
+                                 + thm + '"' + style + '>' + tgt + ": "
+                                 + e.type + ' raised</li>').listview('refresh');
+        });
+        $('#log').on('taphold dblclick', function () {
+            $(this).find('li').remove();
+        });
+    });
+</script>
+
+</div> <!-- /page 1 -->
+    
+<div data-role="dialog" data-theme="a" id="dia" data-add-back-btn="true">
+  <div data-role="header"><h3>Dialog</h3></div>
+  <div data-role="content" data-theme="b">
+    <img id="picjqm" src="http://jquerymobile.com/test/docs/_assets/images/jquery-logo.png" />
+    <p class="ui-bar ui-bar-a" style="margin: 1em -15px -15px;" >
+      <a href="#pop2" data-rel="popup" data-position-to="window">Ok, now open the 2nd Popup</a>
+    </p>
+  </div>
+
+  <div data-role="popup" id="pop2" data-theme="none">
+    <img id="Img1" src="http://test.jqmobile.de/img/popup-test.png" />
+    <div class="ui-bar ui-bar-a">
+       <a href="#dia" data-rel="dialog">open the dialog</a>
+     </div>
+  </div>
+</div>
+
+</body>    
+</html>

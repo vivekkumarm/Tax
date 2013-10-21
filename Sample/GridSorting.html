@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body {
+            font-family: arial;
+            font-size: 14px;
+        }
+
+        .liveExample {
+            padding: 1em;
+            background-color: #EEEEDD;
+            border: 1px solid #CCC;
+            max-width: 655px;
+        }
+
+            .liveExample input {
+                font-family: Arial;
+            }
+
+            .liveExample b {
+                font-weight: bold;
+            }
+
+            .liveExample p {
+                margin-top: 0.9em;
+                margin-bottom: 0.9em;
+            }
+
+            .liveExample select[multiple] {
+                width: 100%;
+                height: 8em;
+            }
+
+            .liveExample h2 {
+                margin-top: 0.4em;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+
+            .liveExample table, .liveExample td, .liveExample th {
+                padding: 0.2em;
+                border-width: 0;
+            }
+
+                .liveExample td input {
+                    width: 13em;
+                }
+
+        tr {
+            vertical-align: top;
+        }
+
+        .liveExample input.error {
+            border: 1px solid red;
+            background-color: #FDC;
+        }
+
+        .liveExample label.error {
+            display: block;
+            color: Red;
+            font-size: 0.8em;
+        }
+
+        .liveExample th {
+            font-weight: bold;
+        }
+
+        li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+     <div class='liveExample'>
+
+        <form action='/someServerSideHandler'>
+            <table data-bind='visible: Movies().length > 0'>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Director</th>
+                         <th>Genere</th>
+                        <th />
+                    </tr>
+                </thead>
+                <tbody data-bind='foreach: Movies'>
+                    <tr>
+                            <td data-bind="text: ID"></td>
+                            <td data-bind="text: Title"></td>
+                            <td data-bind="text: Director"></td>
+                            <td data-bind="text: Genere"></td>
+                        <td><a href='#' data-bind='click: $root.editeMovie'>Edit</a></td>
+                        <td><a href='#' data-bind='click: $root.removeMovie'>Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button data-bind='click: addMovie'>Add Movie</button>
+             <button data-bind='click: sortByName'>Sort by name</button>
+        </form>
+
+    </div>
+    <script src="lib/knockout-2.3.0.js"></script>
+    <script src="lib/jquery-1.9.1.js"></script>
+    <script src="lib/Script/GridSorting.js"></script>
+</body>
+</html>

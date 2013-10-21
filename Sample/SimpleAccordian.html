@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.accordion.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.all.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.base.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.button.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.core.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.dialog.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.menu.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.progressbar.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.resizable.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.selectable.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.slider.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.spinner.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.tabs.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.theme.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery.ui.tooltip.css" rel="stylesheet" />
+   <!-- <script src="Scripts/Accordion/SimpleAccordian.js"></script>-->
+    <script src="Scripts/jquery-ui-1.10.3.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/jquery-ui-1.10.3.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/jquery-ui-1.8.24.js"></script>
+    <script src="Scripts/jquery-ui-1.8.24.min.js"></script>
+    <script src="Scripts/jquery-ui-i18n.js"></script>
+    <script src="Scripts/jquery-ui-i18n.min.js"></script>
+</head>
+<body>
+  <select data-bind="value: selected">
+  <option value="0">Panel 1</option>
+  <option value="1">Panel 2</option>
+  <option value="2">Panel 3</option>
+</select>
+<div data-bind="accordion: { active: active }">
+  <h3>Panel 1</h3>
+  <div>Lorem ipsum dolor sit amet</div>
+  <h3>Panel 2</h3>
+  <div>consectetur adipiscing elit</div>
+  <h3>Panel 3</h3>
+  <div>Nunc tincidunt consectetur sagittis</div>
+</div>
+   <!-- <script type="text/javascript">
+        function Item(id, name) {
+            this.id = ko.observable(id);
+            this.name = ko.observable(name);
+        }
+
+        var viewModel = {
+            items: ko.observableArray([
+                new Item(1, "one"),
+                new Item(2, "two"),
+                new Item(3, "three")])
+        };
+
+        ko.applyBindings(viewModel);
+    </script>-->
+<hr/>
+</body>
+</html>

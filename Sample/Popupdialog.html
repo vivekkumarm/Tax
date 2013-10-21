@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .header {
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/Popup/Popupdialog.js"></script>
+</head>
+
+<body>
+    <h1 class="header" data-bind="text: label"></h1>
+
+<div id="dialog" data-bind="dialog: {autoOpen: false, title: 'Dialog test'}">foo dialog</div>
+
+<div>
+    <button id="openbutton" data-bind="dialogcmd: {id: 'dialog'}" >Open</button>
+    <button id="Button1" data-bind="dialogcmd: {id: 'dialog', cmd: 'close'}" >Close</button>
+</div>
+</body>
+</html>
