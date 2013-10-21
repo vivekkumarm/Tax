@@ -125,6 +125,7 @@
     <Content Include="GridControl.html" />
     <Content Include="GridPaging.html" />
     <Content Include="GridSorting.html" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="knockout_accordion.html" />
     <Content Include="packages.config" />
     <Content Include="Popupdialog.html" />
