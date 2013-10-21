@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/DropDown/Drop-down.js"></script>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <!--<script src="Scripts/jquery-2.0.3.js"></script>
+    <script src="Scripts/jquery-2.0.3.min.js"></script>-->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+        <!-- <table>
+        <tr>
+            <td class="label">Drop-down list:</td>
+        </tr>
+    </table>-->
+    Cascading Drop-down
+    <br />
+    <select id="make" data-bind="options: countries, value: selectedCountry, optionsText: 'text', optionsCaption: 'Select your Country'"></select><br />
+    <select id="type" data-bind="options: states, value: selectedState, optionsText: 'text', optionsCaption: 'Select your State', enable: states"></select><br />
+    <select id="model" data-bind="options: districts, value: selectedDistrict, optionsText: 'text', optionsCaption: 'Select your District', enable: states"></select>
+
+
+</body>
+</html>
