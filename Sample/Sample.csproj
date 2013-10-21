@@ -101,7 +101,11 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+<<<<<<< HEAD
     <Content Include="css\Editable-Grid.css" />
+=======
+    <Content Include="ControlEvents.html" />
+>>>>>>> 2aff239b02e1558a3b26f8246166304d860f721b
     <Content Include="css\Tabcontrol.css" />
     <Content Include="DropDown.html" />
     <Content Include="EditableGrid.html" />
@@ -116,6 +120,7 @@
     <Content Include="Popupdialog.html" />
     <Content Include="Scripts\Accordion\Accordion.js" />
     <Content Include="Scripts\Accordion\SimpleAccordian.js" />
+    <Content Include="Scripts\ControlEvents\ControlEvents.js" />
     <Content Include="Scripts\DropDown\Drop-down.js" />
     <Content Include="Scripts\DropDown\Dropdown.js" />
     <Content Include="Scripts\Grid\GridBinding.js" />
