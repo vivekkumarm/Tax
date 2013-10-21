@@ -7,3 +7,7 @@ D:\Tax\Sample\Sample\bin\Sample.dll
 D:\Tax\Sample\Sample\bin\Sample.pdb
 D:\Tax\Sample\Sample\obj\Debug\Sample.dll
 D:\Tax\Sample\Sample\obj\Debug\Sample.pdb
+<<<<<<< HEAD
+=======
+D:\Tax\Sample\Sample\obj\Debug\Sample.csprojResolveAssemblyReference.cache
+>>>>>>> 90b849488b2349ebd6ad75d7f6f158e0e149a4b0

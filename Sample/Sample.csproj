@@ -38,6 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <!--<Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -57,6 +58,8 @@
     <Reference Include="System.EnterpriseServices" />-->
   </ItemGroup>
   <ItemGroup>
+=======
+>>>>>>> 90b849488b2349ebd6ad75d7f6f158e0e149a4b0
     <Content Include="Accordion.html" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -120,9 +123,20 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+<<<<<<< HEAD
     <Content Include="ControlEvents.html" />
     <Content Include="css\Tabcontrol.css" />
     <Content Include="DropDown.html" />
+=======
+<<<<<<< HEAD
+    <Content Include="css\Editable-Grid.css" />
+=======
+    <Content Include="ControlEvents.html" />
+>>>>>>> 2aff239b02e1558a3b26f8246166304d860f721b
+    <Content Include="css\Tabcontrol.css" />
+    <Content Include="DropDown.html" />
+    <Content Include="EditableGrid.html" />
+>>>>>>> 90b849488b2349ebd6ad75d7f6f158e0e149a4b0
     <Content Include="GidBinding.html" />
     <Content Include="DropDown1.html" />
     <Content Include="GridControl.html" />
@@ -187,6 +201,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+>>>>>>> 90b849488b2349ebd6ad75d7f6f158e0e149a4b0
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
