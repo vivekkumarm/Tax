@@ -125,8 +125,6 @@
     <Content Include="GridControl.html" />
     <Content Include="GridPaging.html" />
     <Content Include="GridSorting.html" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="HtmlPage2.html" />
     <Content Include="knockout_accordion.html" />
     <Content Include="packages.config" />
     <Content Include="Popupdialog.html" />
@@ -159,6 +157,7 @@
     <Content Include="Scripts\Popup\Popupdialog.js" />
     <Content Include="Scripts\TabControl\TabcontrolJs.js" />
     <Content Include="SimpleAccordian.html" />
+    <Content Include="suma.html" />
     <Content Include="TabControl.html" />
     <Content Include="Test.html" />
     <Content Include="Web.config" />
