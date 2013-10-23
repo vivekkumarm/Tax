@@ -2,8 +2,15 @@ D:\Tax\Sample\Sample\bin\Sample.dll
 D:\Tax\Sample\Sample\bin\Sample.pdb
 D:\Tax\Sample\Sample\obj\Debug\Sample.dll
 D:\Tax\Sample\Sample\obj\Debug\Sample.pdb
+<<<<<<< HEAD
 F:\Sujanth Backup\Sample\Sample\bin\Sample.dll
 F:\Sujanth Backup\Sample\Sample\bin\Sample.pdb
 F:\Sujanth Backup\Sample\Sample\obj\Debug\Sample.dll
 F:\Sujanth Backup\Sample\Sample\obj\Debug\Sample.pdb
 F:\Sujanth Backup\Sample\Sample\obj\Debug\Sample.csprojResolveAssemblyReference.cache
+=======
+<<<<<<< HEAD
+=======
+D:\Tax\Sample\Sample\obj\Debug\Sample.csprojResolveAssemblyReference.cache
+>>>>>>> 90b849488b2349ebd6ad75d7f6f158e0e149a4b0
+>>>>>>> ed8fc401212ab6b1c974d6974115ead459802112

@@ -120,10 +120,18 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+
     <Content Include="ControlEvents.html" />
     <Content Include="css\default.css" />
     <Content Include="css\Tabcontrol.css" />
     <Content Include="css\TreeStyleSheet.css" />
+    <Content Include="DropDown.html" />
+
+    <Content Include="EditableGrid.html" />
+
+    <Content Include="css\Editable-Grid.css" />
+    <Content Include="ControlEvents.html" />
+    <Content Include="css\Tabcontrol.css" />
     <Content Include="DropDown.html" />
     <Content Include="EditableGrid.html" />
     <Content Include="GidBinding.html" />
@@ -200,6 +208,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
