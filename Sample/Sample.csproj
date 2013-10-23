@@ -121,8 +121,11 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
     <Content Include="ControlEvents.html" />
+    <Content Include="css\default.css" />
     <Content Include="css\Tabcontrol.css" />
+    <Content Include="css\TreeStyleSheet.css" />
     <Content Include="DropDown.html" />
+    <Content Include="EditableGrid.html" />
     <Content Include="GidBinding.html" />
     <Content Include="DropDown1.html" />
     <Content Include="GridControl.html" />
@@ -130,6 +133,8 @@
     <Content Include="GridSorting.html" />
     <Content Include="knockout_accordion.html" />
     <Content Include="List.html" />
+    <Content Include="List2.html" />
+    <Content Include="Menu.html" />
     <Content Include="packages.config" />
     <Content Include="Popupdialog.html" />
     <Content Include="Scripts\Accordion\Accordion.js" />
@@ -137,6 +142,7 @@
     <Content Include="Scripts\ControlEvents\ControlEvents.js" />
     <Content Include="Scripts\DropDown\Drop-down.js" />
     <Content Include="Scripts\DropDown\Dropdown.js" />
+    <Content Include="Scripts\EditableGrid\EditableGrid.js" />
     <Content Include="Scripts\Grid\GridBinding.js" />
     <Content Include="Scripts\Grid\GridControlJS.js" />
     <Content Include="Scripts\Grid\GridJsnop.js" />
@@ -160,13 +166,22 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
+    <Content Include="Scripts\knockout.debug.js" />
+    <Content Include="Scripts\knockout.js" />
+    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\List\List.js" />
+    <Content Include="Scripts\Menu\Menu.js" />
     <Content Include="Scripts\Popup\Popup.js" />
     <Content Include="Scripts\Popup\Popupdialog.js" />
     <Content Include="Scripts\TabControl\TabcontrolJs.js" />
+    <Content Include="Scripts\test.js" />
+    <Content Include="Scripts\TreeView\TreeView.js" />
     <Content Include="Scripts\Validation\KoValidation.js" />
     <Content Include="SimpleAccordian.html" />
     <Content Include="TabControl.html" />
+    <Content Include="test.html" />
+    <Content Include="Treeview.html" />
     <Content Include="Validation.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -174,7 +189,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="css\default.css" />
     <None Include="Scripts\default.js" />
     <None Include="index.html" />
   </ItemGroup>

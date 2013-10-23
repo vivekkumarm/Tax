@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+      <title></title>
+  <!-- <link data-require="font-awesome@*" data-semver="3.0.2" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css" />-->
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/knockout-2.3.0.debug.js"></script>
+    <script src="Scripts/jquery-2.0.3.js"></script>
+    <script src="Scripts/knockout.mapping-latest.js"></script>
+      <link href="css/TreeStyleSheet.css" rel="stylesheet" />
+     <script src="Scripts/TreeView/TreeView.js"></script>
+         <script type="text/html" id="tree-node">
+        <li>
+            <span class="node-toggle" data-bind="visible: expanded, click: toggle">&ndash;</span>
+            <span class="node-toggle" data-bind="visible: collapsed, click: toggle">+</span>
+            <span class="node-label" data-bind="text: name, click: $root.selected"></span>
+
+            <div data-bind="if: expanded">
+                <ul data-bind="template: {name: 'tree-node', foreach: children}"></ul>
+            </div>
+        </li>
+    </script>
+  </head>
+
+  <body>
+    <h1>Example Tree</h1>
+    <p>Click on the plus sign to expand a node, click on the label to select it.</p>
+    <ul data-bind="template: {name: 'tree-node', data: root}"></ul>
+    <div data-bind="if: selected">
+      <div data-bind="with: selected">
+        Selected Node:                 <span data-bind="text: name"></span>
+      </div>
+    </div>
+  </body>
+
+</html>

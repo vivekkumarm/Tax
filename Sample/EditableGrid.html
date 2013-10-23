@@ -1,0 +1,72 @@
+﻿<!-- ------------------------------------------------
+Copyright © Microsoft Corporation. All rights reserved
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+------------------------------------------------ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+      <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="css/default.css" />
+    <script src="Scripts/EditableGrid/EditableGrid.js"></script>
+
+</head>
+<body>
+    <button class="button addNewButton"
+        data-bind="click: $root.addFruit">
+        Add a new fruit</button>
+    <hr />
+    <table class="fruitGrid">
+        <thead>
+            <tr>
+                <th class="headRow headColumn">Fruit Name
+                </th>
+                <th class="headRow headColumn">Fruit Colour
+                </th>
+                <th class="headRow tools"></th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: fruits">
+            <tr class="row">
+                <td class="rowItem">
+                    <input type="text"
+                        class="edit"
+                        data-bind="value: name, visible: $root.isItemEditing($data)" />
+                    <label class="read"
+                        data-bind="text: name, visible: !$root.isItemEditing($data)" />
+                </td>
+                <td class="rowItem">
+                    <select class="edit" data-bind="options: $root.availableColours, value: colour, visible: $root.isItemEditing($data)"></select>
+                    <label class="read" data-bind="text: colour, visible: !$root.isItemEditing($data)" />
+                </td>
+                <td class="tools">
+                    <a class="button toolButton"
+                        href="#"
+                        data-bind="click: $root.editFruit.bind($root), visible: !$root.isItemEditing($data)">Edit</a>
+                    <a class="button toolButton"
+                        href="#"
+                        data-bind="click: $root.removeFruit.bind($root), visible: !$root.isItemEditing($data)">Remove</a>
+                    <a class="button toolButton"
+                        href="#"
+                        data-bind="click: $root.applyFruit.bind($root), visible: $root.isItemEditing($data)">Apply</a>
+                    <a class="button toolButton"
+                        href="#"
+                        data-bind="click: $root.cancelEdit.bind($root), visible: $root.isItemEditing($data)">Cancel</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

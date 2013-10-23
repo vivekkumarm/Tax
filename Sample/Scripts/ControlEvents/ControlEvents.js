@@ -8,3 +8,4 @@
     radioSelectedOptionValue: ko.observable("Beta")
 };
 ko.applyBindings(viewModel);
+
